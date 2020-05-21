@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Cabañas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="img/p.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f2f853638.js"></script>
+</head>
+<body>
+    
+        <header>
+            <div id="logo" class="container">
+                <a href="index.html">Pelis Cabañas</a>
+                <a href="#barra-busqueda"><i class="fas fa-search" style="font-size:21px; cursor:pointer;"></i></a> 
+            </div>
+        </header>
+        <section id="recent-added">
+            <div class="container">
+                <h2>Últimas agregadas</h2>
+                <div class="peliculas">
+                    <div class="caja-peli"
+                    data-descripcion="Tanto Gi Taek (Song Kang-ho) como su familia están sin trabajo. Cuando su hijo mayor, Gi Woo (Choi Woo-sik), empieza a dar clases particulares en casa de Park (Lee Seon-gyun), las dos familias, que tienen mucho en común pese a pertenecer a dos mundos totalmente distintos, comienzan una interrelación de resultados imprevisibles.">
+                        <ul>
+                            <li><img src="img/parasite.jpg" alt=""></li>
+                            <li>Parasite</li>
+                            <li>2019</li>
+                            <li>Comedia, Drama</li>
+                            <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt6751668" data-style="p5"><a href="https://www.imdb.com/title/tt6751668/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                            <li><a href="https://youtu.be/Kr9vLVlkIG4" target="_blank">Ver Trailer</a></li>
+                        </ul>
+                    </div>
+                    <div class="caja-peli"
+                    data-descripcion="Arthur Fleck (Phoenix) vive en Gotham con su madre, y su única motivación en la vida es hacer reír a la gente. Actúa haciendo de payaso en pequeños trabajos, pero tiene problemas mentales que hacen que la gente le vea como un bicho raro. Su gran sueño es actuar como cómico delante del público, pero una serie de trágicos acontecimientos le hará ir incrementando su ira contra una sociedad que le ignora.">
+                        <ul>
+                            <li><img src="img/joker.jpg" alt=""></li>
+                            <li>Joker</li>
+                            <li>2019</li>
+                            <li>Thriller, Drama</li>
+                            <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt7286456" data-style="p5"><a href="https://www.imdb.com/title/tt7286456/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                            <li><a href="https://youtu.be/TobNCFMK_bs" target="_blank">Ver Trailer</a></li>
+                        </ul>
+                    </div>
+                    <div class="caja-peli"
+                    data-descripcion="El futuro, en una distopía. Dos personas por nivel. Un número desconocido de niveles. Una plataforma con comida para todos ellos. ¿Eres de los que piensan demasiado cuando están arriba? ¿O de los que no tienen agallas cuando están abajo? Si lo descubres demasiado tarde, no saldrás vivo del hoyo.">
+                        <ul>
+                            <li><img src="img/elHoyo.jpg" alt=""></li>
+                            <li>El Hoyo</li>
+                            <li>2019</li>
+                            <li>Ciencia ficción, Thriller</li>
+                            <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt8228288" data-style="p5"><a href="https://www.imdb.com/title/tt8228288/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                            <li><a href="https://dai.ly/x7svjwh" target="_blank">Ver Trailer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <div class="container">
+        <h2 class="catalogo">Catálogo</h2>
+        <div class="form">
+            <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+        </div>
+        <div class="categorias" id="categorias">
+            <a href="#" class="activo">Todas</a>
+            <a href="#">Acción</a>
+            <a href="#">Animación</a>
+            <a href="#">Aventura</a>
+            <a href="#">Comedia</a>
+            <a href="#">Ciencia Ficción</a>
+            <a href="#">Drama</a>
+            <a href="#">Terror</a>
+            <a href="#">Thriller</a>
+        </div>
+    </div>
+    <div class="container">
+        <section class="grid" id="grid">           
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="hotel transylvania 3 animacion aventura comedia disney" 
+                data-descripcion="Nuestra familia de monstruos favorita se embarca en un crucero de lujo para que por fin Drac pueda tomarse un descanso de proveer de vacaciones al resto en el hotel. Es una navegación tranquila para la pandilla de Drac, ya que los monstruos se entregan a toda la diversión a bordo que ofrece el crucero, desde el voleibol de monstruos y las excursiones exóticas, a ponerse al día con sus bronceados de luna. Pero las vacaciones de ensueño se convierten en una pesadilla cuando Mavis se da cuenta de que Drac se ha enamorado de la misteriosa capitana de la nave, Ericka, quien esconde un peligroso secreto que podría destruir a todos los monstruos."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/hotelTransylvania3.jpg" alt="Hotel Transylvania 3"></li>
+                        <li>Hotel Transylvania 3</li>
+                        <li>2018</li>
+                        <li>Animación, Aventura</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5220122" data-style="p5"><a href="https://www.imdb.com/title/tt5220122/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=7RaXr6h7aQM" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="aventura" 
+                data-etiquetas="aventura comedia drama christopher robin" 
+                data-descripcion="En esta nueva aventura de acción real, el niño que se embarcó en innumerables aventuras en el bosque de los Cien Acres con su banda de animales de peluche, ha crecido y… ha perdido el rumbo. Ahora les toca a sus amigos de la infancia aventurarse en nuestro mundo y ayudar a Christopher Robin a recordar al niño cariñoso y juguetón que aún tiene dentro."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/christopherRobin.jpg" alt=""></li>
+                        <li>Christopher Robin</li>
+                        <li>2018</li>
+                        <li>Aventura, Comedia</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt4575576" data-style="p5"><a href="https://www.imdb.com/title/tt4575576/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=Xgd86vk1mWk" target="_blank">Ver Trailer</a></li>
+                    </ul>                   
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="terror" 
+                data-etiquetas="it terror" 
+                data-descripcion="Cuando empiezan a desparecer niños en el pueblo de Derry (Maine), un pandilla de amigos lidia con sus mayores miedos al enfrentarse a un malvado payaso llamado Pennywise, cuya historia de asesinatos y violencia data de siglos. Adaptación cinematográfica de la conocida novela de Stephen King (It)."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/it.jpg" alt=""></li>
+                        <li>It</li>
+                        <li>2017</li>
+                        <li>Terror</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt1396484" data-style="p5"><a href="https://www.imdb.com/title/tt1396484/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=2VQQkCr5eeg" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="drama" 
+                data-etiquetas="drama misterio ciencia ficcion arrival la llegada" 
+                data-descripcion="Cuando naves extraterrestres comienzan a llegar a la Tierra, los altos mandos militares piden ayuda a una experta lingüista (Amy Adams) para intentar averiguar si los alienígenas vienen en son de paz o suponen una amenaza. Poco a poco la mujer intentará aprender a comunicarse con los extraños invasores, poseedores de un lenguaje propio, para dar con la verdadera y misteriosa razón de la visita extraterrestre... Adaptación del relato corto 'The Story of Your Life' del escritor Ted Chiang, ganador de los reconocidos premios de ciencia ficción Hugo y Nebula."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/arrival.jpg" alt=""></li>
+                        <li>Arrival</li>
+                        <li>2016</li>
+                        <li>Drama, Misterio, Sci-Fi</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt2543164" data-style="p5"><a href="https://www.imdb.com/title/tt2543164/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=MO1_LTOsifE" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="terror" 
+                data-etiquetas="el conjuro 2 terror" 
+                data-descripcion="Secuela de la exitosa 'Expediente Warren' (2013) que presenta un caso real de los renombrados demonólogos Ed y Lorraine Warren. Para resolverlo viajan al norte de Londres para ayudar a una madre soltera que vive con sus cuatro hijos en una casa plagada de espíritus malignos."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/elConjuro2.jpg" alt=""></li>
+                        <li>El Conjuro 2</li>
+                        <li>2016</li>
+                        <li>Terror</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt3065204" data-style="p5"><a href="https://www.imdb.com/title/tt3065204/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=kCNAor73fVA" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="comedia" 
+                data-etiquetas="neighbors 2 buenos vecinos 2 comedia" 
+                data-descripcion="Secuela de 'Malditos vecinos' (2014). Mac y Kelly Radner (Seth Rogen y Rose Byrne) desean vender su casa, pero no les resultará nada fácil porque está al lado de una fraternidad universitaria, donde las chicas celebran fiestas continuamente. Para enfrentarse a las descontroladas estudiantes contarán con la ayuda de Teddy (Zac Efron) y Pete (Dave Franco)."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/malditosVecinos2.jpg" alt=""></li>
+                        <li>Buenos Vecinos 2</li>
+                        <li>2016</li>
+                        <li>Comedia</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt4438848" data-style="p5"><a href="https://www.imdb.com/title/tt4438848/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=A2B04dOSgNY" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="comedia" 
+                data-etiquetas="la la land una historia de amor" 
+                data-descripcion="Mia (Emma Stone), una joven aspirante a actriz que trabaja como camarera mientras acude a castings, y Sebastian (Ryan Gosling), un pianista de jazz que se gana la vida tocando en sórdidos tugurios, se enamoran, pero su gran ambición por llegar a la cima en sus carreras artísticas amenaza con separarlos."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/laLaLand.jpg" alt=""></li>
+                        <li>La La Land</li>
+                        <li>2016</li>
+                        <li>Musical, Romance</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt3783958" data-style="p5"><a href="https://www.imdb.com/title/tt3783958/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=-hO6miQ8DxI" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="terror" 
+                data-etiquetas="terror cuando las luces se apagan Lights Out" 
+                data-descripcion="Rebecca es una joven que es perseguida desde niña por Diana, un ser extraño que sólo puede atacar en la oscuridad. El espíritu de Diana está relacionado con la madre de Rebecca. Ahora que se está convirtiendo en adulta, Diana va a por su hermano pequeño, Martin. Adaptación del corto de 2013, 'Lights Out', del mismo David F. Sandberg."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/cuandoLasLucesSeApagan.jpg" alt=""></li>
+                        <li>Lights Out</li>
+                        <li>2016</li>
+                        <li>Terror, Sobrenatural</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt4786282" data-style="p5"><a href="https://www.imdb.com/title/tt4786282/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://www.youtube.com/watch?v=eGlSV-lSEBE" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="comedia" 
+                data-etiquetas="comedia navidad fiesta de navidad en la oficina" 
+                data-descripcion="A Clay (T. J. Miller) las cosas no le van bien a nivel profesional. Su estirada hermana, Carol Vanstone (Jennifer Aniston), CEO de la compañía, amenaza con cerrar su sucursal, así que Clay, gerente de dicha oficina, decide organizar una fiesta navideña épica para intentar conseguir a un nuevo cliente. Pero no contaba con que la fiesta se saliera de control."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/fiestaDeNavidadEnLaOficina.jpg" alt=""></li>
+                        <li class="font14">Fiesta de Navidad en la Oficina</li>
+                        <li>2016</li>
+                        <li>Comedia, Navidad</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt1711525" data-style="p5"><a href="https://www.imdb.com/title/tt1711525/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/2cyc9Afsomo" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="acción" 
+                data-etiquetas="belico accion drama dunkerque" 
+                data-descripcion="Año 1940, en plena 2ª Guerra Mundial. En las playas de Dunkerque, cientos de miles de soldados de las tropas británicas y francesas se encuentran rodeados por el avance del ejército alemán, que ha invadido Francia. Atrapados en la playa, con el mar cortándoles el paso, las tropas se enfrentan a una situación angustiosa que empeora a medida que el enemigo se acerca."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/dunkerque.jpg" alt=""></li>
+                        <li>Dunkerque</li>
+                        <li>2017</li>
+                        <li>Bélico, Acción</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5013056" data-style="p5"><a href="https://www.imdb.com/title/tt5013056/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/T8ib8LLKYBU" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="thriller" 
+                data-etiquetas="thriller viento salvaje wind river intriga policiaco crimen" 
+                data-descripcion="Una joven agente del FBI se alía con un veterano rastreador local para investigar el asesinato de una joven ocurrido en una reserva de nativos americanos..."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/muerteMisteriosa.jpg" alt=""></li>
+                        <li>Viento salvaje</li>
+                        <li>2017</li>
+                        <li>Thriller</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5362988" data-style="p5"><a href="https://www.imdb.com/title/tt5362988/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/XVddJOcNpOc" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="animacion comedia mi villano favorito 3" 
+                data-descripcion="Balthazar Pratt, un antiguo niño estrella obsesionado con el personaje que encarnó en los años ochenta, demuestra ser el peor enemigo al que Gru ha debido enfrentarse hasta la fecha."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/miVillanoFavorito3.jpg" alt=""></li>
+                        <li>Mi Villano Favorito 3</li>
+                        <li>2017</li>
+                        <li>Animacion, Comedia</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt3469046" data-style="p5"><a href="https://www.imdb.com/title/tt3469046/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/GDw65PRAOfM" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="comedia" 
+                data-etiquetas="comedia accion noche de juegos game night" 
+                data-descripcion="Max y Annie quedan todas las semanas con sus amigos para celebrar una noche de juegos. Competitivos hasta el extremo, ahora están preocupados por la vuelta del hermano de Max, un presuntuoso ganador que lleva toda la vida menospreciándolo. Un día, Max, Annie y sus amigos son invitados por Brooks, el carismático hermano de Max, a lo que afirma será una noche de juegos inolvidable. Cuando llegan a su formidable casa, Brooks les informa de en qué consiste el juego: ha contratado a una empresa que secuestrará a uno de los presentes y, si no lo encuentran en un tiempo determinado, el secuestrado morirá."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/nocheDeJuegos.jpg" alt=""></li>
+                        <li>Noche de Juegos</li>
+                        <li>2018</li>
+                        <li>Comedia, Acción</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt2704998" data-style="p5"><a href="https://www.imdb.com/title/tt2704998/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/u2KrGegZ8Js" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="terror" 
+                data-etiquetas="a quiet place un lugar en silencio terror intriga" 
+                data-descripcion="Sigue la historia de una familia que vive en una casa en el bosque cuidándose de no emitir ningún sonido. Si no te escuchan, no pueden cazarte..."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/aQuietPlace.jpg" alt=""></li>
+                        <li>Un Lugar en Silencio</li>
+                        <li>2018</li>
+                        <li>Terror, Intriga</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt6644200" data-style="p5"><a href="https://www.imdb.com/title/tt6644200/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/0GyK57NOY30" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="drama" 
+                data-etiquetas="drama crimen asesinato en el expreso de oriente murder on the orient express" 
+                data-descripcion="Durante un viaje en el legendario tren Orient Express, el detective belga Hercules Poirot investiga un asesinato cometido en el trayecto, y a resultas del cual todos los pasajeros del tren son sospechosos del mismo."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/asesinatoEnElExpresoDeOriente.jpg" alt=""></li>
+                        <li class="font14">Asesinato en el Expreso de Oriente</li>
+                        <li>2017</li>
+                        <li>Drama, Crimen</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt3402236" data-style="p5"><a href="https://www.imdb.com/title/tt3402236/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/GUHLzmB90iw" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="animacion comedia coco disney" 
+                data-descripcion="Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su pasión le llevará a adentrarse en la 'Tierra de los Muertos' para conocer su verdadero legado familiar."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/coco.jpg" alt=""></li>
+                        <li>Coco</li>
+                        <li>2017</li>
+                        <li>Animación, Comedia</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt2380307" data-style="p5"><a href="https://www.imdb.com/title/tt2380307/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/YVXdhaldmyw" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="terror" 
+                data-etiquetas="la monja horror terror the nun" 
+                data-descripcion="Cuando una joven monja se suicida en una abadía de clausura en Rumanía, un sacerdote experto en posesiones demoniacas y una novicia a punto de tomar sus votos, son enviados por el Vaticano para investigar. Juntos descubren el profano secreto de la orden. Arriesgando no solo sus propias vidas sino su fe y hasta sus almas, se enfrentan a una fuerza maléfica en forma de monja demoníaca, en una abadía que se convierte en un campo de batalla de horror entre los vivos y los condenados.... Spin-off de la película de terror de 2016 'The Conjuring 2'. Producida por Atomic Monster, productora del director especializado en el género de terror, James Wan."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/laMonja.jpg" alt=""></li>
+                        <li>La Monja</li>
+                        <li>2018</li>
+                        <li>Terror</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5814060" data-style="p5"><a href="https://www.imdb.com/title/tt5814060/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/UZ_7__0rBAU" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="animacion aventura disney el cascanueces y los cuatro reinos" 
+                data-descripcion="Versión de 'El cascanueces'. Todo lo que Clara quiere es una llave que abre una caja que contiene un regalo muy valioso de su madre fallecida. En la fiesta anual de los Drosselmeyer encuentra una pista que le lleva a la llave, pero ésta desaparece en un mundo paralelo..."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/elCascanuecesYLosCuatroReinos.jpg" alt=""></li>
+                        <li class="font14">El Cascanueces y los Cuatro Reinos</li>
+                        <li>2018</li>
+                        <li>Animación, Fantástico</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5523010" data-style="p5"><a href="https://www.imdb.com/title/tt5523010/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/Pc4gr5U6CSw" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="aventura" 
+                data-etiquetas="aventura alfa alpha" 
+                data-descripcion="Una aventura épica y una historia de supervivencia ambientada en la Europa de hace 20.000 años, durante la última glaciación. En mitad de su primera cacería con el grupo de élite de su tribu, un joven es herido y dado por muerto. Al despertar se encontrará débil y solo, y deberá aprender a sobrevivir y abrirse camino ante la dura y cruel naturaleza. Acompañado a regañadientes de un lobo abandonado por su manada, los dos aprenderán a confiar el uno en el otro, convertirse en aliados y superar los innumerables peligros para intentar encontrar el camino a casa antes de que llegue el letal invierno."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/alfa.jpg" alt=""></li>
+                        <li>Alfa</li>
+                        <li>2018</li>
+                        <li>Aventura</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt4244998" data-style="p5"><a href="https://www.imdb.com/title/tt4244998/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/NbX6uVMrHU8" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="animacion disney los increibles 2" 
+                data-descripcion="Secuela de 'Los increíbles'. Helen tiene que liderar una campaña para que los superhéroes regresen, mientras Bob vive su vida 'normal' con Violet, Dash y el bebé Jack-Jack —cuyos superpoderes descubriremos—. Su misión se va a pique cuando aparece un nuevo villano con un brillante plan que lo amenaza todo. Pero los Parr no se amedrentarán y menos teniendo a Frozone de su parte."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/losIncreibles2.jpg" alt=""></li>
+                        <li>Los Increibles 2</li>
+                        <li>2018</li>
+                        <li>Animación, Aventura</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt3606756" data-style="p5"><a href="https://www.imdb.com/title/tt3606756/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/gD5PEHX3jog" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciencia ficción" 
+                data-etiquetas="hotel artemis hotel de criminales ciencia ficcion" 
+                data-descripcion="Los Ángeles, año 2028. El Hotel Artemis es un hospital exclusivo para delincuentes, regentado por Jean Thomas (Jodie Foster) y ceñido a unas reglas muy estrictas. Cuando el centro es atacado, dará paso a una espiral de violencia difícil de contener."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/hotelArtemis.jpg" alt=""></li>
+                        <li>Hotel Artemis</li>
+                        <li>2018</li>
+                        <li>Ciencia Ficción, Thriller</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5834262" data-style="p5"><a href="https://www.imdb.com/title/tt5834262/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/JjK-aCHsDQs" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciencia ficción" 
+                data-etiquetas="ciencia ficcion accion maquinas mortales mortal engines" 
+                data-descripcion="Miles de años después de la destrucción de la civilización por un cataclismo, la humanidad se ha adaptado y, ahora, existen gigantescas ciudades en movimiento que vagan por la tierra sobre enormes ruedas absorbiendo a los pueblos más pequeños para obtener recursos. En una de esas colosales urbes Tom Natsworthy (Robert Sheehan), proveniente de la clase baja de Londres, deberá luchar por su vida junto a la peligrosa fugitiva Hester Shaw (Hera Hilmar). Dos opuestos, cuyos caminos nunca debieron cruzarse, forman una peculiar alianza destinada a cambiar el curso del futuro."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/maquinasMortales.jpg" alt=""></li>
+                        <li>Maquinas Mortales</li>
+                        <li>2018</li>
+                        <li>Ciencia Ficción, Acción</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt1571234" data-style="p5"><a href="https://www.imdb.com/title/tt1571234/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/QcfJX7O5A04" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="comedia" 
+                data-etiquetas="fantastico comedia accion shazam" 
+                data-descripcion="Cuando Billy Batson (Angel), un chaval de acogida de 14 años que ha crecido en las calles, grita la palabra 'SHAZAM!', se convierte en el Superhéroe adulto Shazam (Levi), por cortesía de un antiguo mago. Dentro de un cuerpo musculoso y divino, Shazam esconde un corazón de niño. Pero lo mejor es que en esta versión de adulto consigue realizar todo lo que le gustaría hacer a cualquier adolescente con superpoderes: ¡Divertirse con ellos! ¿Volar? ¿Tener visión de rayos X? ¿Disparar un rayo con las manos? ¿Saltarse el examen de sociales? Shazam va a poner a prueba los límites de sus habilidades con la inconsciencia propia de un niño. Pero necesitará dominar rápidamente esos poderes para luchar contra las letales fuerzas del mal que controla el Dr. Thaddeus Sivana"
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/shazam!.jpg" alt=""></li>
+                        <li>Shazam!</li>
+                        <li>2019</li>
+                        <li>Fantástico, Comedia</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt0448115" data-style="p5"><a href="https://www.imdb.com/title/tt0448115/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/AU1L6TdRPK0" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="aventura" 
+                data-etiquetas="aventura fantastico pokemon detective pikachu" 
+                data-descripcion="Cuando el gran detective privado Harry Goodman desaparece misteriosamente; Tim, su hijo de 21 años, debe averiguar qué sucedió. En la investigación lo ayuda el antiguo compañero Pokémon de Harry, el Detective Pikachu: un super detective adorable y ocurrente que se asombra incluso a sí mismo. Tim y Pikachu se dan cuenta que increíblemente pueden comunicarse, y unen fuerzas en una aventura para develar el misterio enmarañado."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/pokemonDetectivePicachu.jpg" alt=""></li>
+                        <li class="font14">Pokémon: Detective Pikachu</li>
+                        <li>2019</li>
+                        <li>Aventura, Fantástico</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5884052" data-style="p5"><a href="https://www.imdb.com/title/tt5884052/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/iBC01o1ifRs" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="acción" 
+                data-etiquetas="accion fantastico spiderman spider-man lejos de casa" 
+                data-descripcion="Peter Parker decide irse junto a MJ, Ned y el resto de sus amigos a pasar unas vacaciones a Europa. Sin embargo, el plan de Parker por dejar de lado sus superpoderes durante unas semanas se ven truncados cuando Nick Fury contacta con él para solicitarle ayuda para frenar el ataque de unas criaturas elementales que están causando el caos en el continente. En ese momento, Parker vuelve a ponerse el traje de Spider-Man para cumplir con su labor."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/spidermanLejosDeCasa.jpg" alt=""></li>
+                        <li>Spider-Man: Lejos de casa</li>
+                        <li>2019</li>
+                        <li>Acción, Fantástico</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt6320628" data-style="p5"><a href="https://www.imdb.com/title/tt6320628/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/DYYtuKyMtY8" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="acción" 
+                data-etiquetas="accion thriller john wick 3" 
+                data-descripcion="John Wick (Keanu Reeves) regresa a la acción, solo que esta vez con una recompensa de 14 millones de dólares sobre su cabeza y con un ejército de mercenarios intentando darle caza. Tras asesinar a uno de los miembros del gremio de asesinos al que pertenecía, Wick es expulsado de la organización, pasando a convertirse en el centro de atención de multitud de asesinos a sueldo que esperan detrás de cada esquina para tratar de deshacerse de él."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/johnWick3.jpg" alt=""></li>
+                        <li>John Wick 3: Parabellum</li>
+                        <li>2019</li>
+                        <li>Acción, Thriller</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt6146586" data-style="p5"><a href="https://www.imdb.com/title/tt6146586/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/pU8-7BX9uxs" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="acción" 
+                data-etiquetas="venom accion fantastico ciencia ficcion" 
+                data-descripcion="Como periodista, Eddie Brock (Tom Hardy) lleva tiempo intentando desenmascarar al creador de la Fundación Vida, el famoso genio científico Carlton Drake (Riz Ahmed), una obsesión que ha arruinado su carrera y su relación con su novia, Anne (Michelle Williams). Al investigar uno de los experimentos de Drake, el ente alienígena Venom se fusiona con el cuerpo de Eddie, y el reportero adquiere de pronto nuevos e increíbles superpoderes, así como la oportunidad de hacer prácticamente lo que se le antoje. Retorcido, oscuro, impredecible e impulsado por la cólera, Venom obliga a Eddie a luchar por controlar unas habilidades sumamente peligrosas que, al mismo tiempo, también resultan embriagadoras y le hacen sentir poderoso. Dado que Eddie y Venom se necesitan mutuamente para conseguir lo que quieren, se van entremezclando cada vez más... ¿Dónde acaba Eddie y empieza Venom?"
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/venom.jpg" alt=""></li>
+                        <li>Venom</li>
+                        <li>2018</li>
+                        <li>Acción, Fantástico</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt1270797" data-style="p5"><a href="https://www.imdb.com/title/tt1270797/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/xLCn88bfW1o" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciencia ficción" 
+                data-etiquetas="ciencia ficcion accion alita la ultima guerrera battle angel" 
+                data-descripcion="Cuando Alita (Rosa Salazar) se despierta sin recordar quién es en un mundo futuro que no reconoce, Ido (Christoph Waltz), un médico compasivo, se da cuenta de que en algún lugar de ese caparazón de cyborg abandonado, está el corazón y alma de una mujer joven con un pasado extraordinario. Mientras Alita toma las riendas de su nueva vida y aprende a adaptarse a las peligrosas calles de Iron City, Ido tratará de protegerla de su propio pasado, mientras que su nuevo amigo Hugo (Keean Johnson) se ofrecerá, en cambio, a ayudarla a desenterrar sus recuerdos. Cuando las fuerzas mortales y corruptas que manejan la ciudad comienzan a perseguir a Alita, ella descubre una pista crucial sobre su pasado: posee habilidades de combate únicas que los que ostentan el poder querrán controlar a toda costa. Sólo manteniéndose fuera de su alcance, podrá salvar a sus amigos, a su familia y el mundo que ha aprendido a amar. Remake del clásico anime de 1993 'Alita, Ángel del Combate'."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/Alita.BattleAngel.jpg" alt=""></li>
+                        <li class="font14">Battle Angel: La última guerrera</li>
+                        <li>2019</li>
+                        <li>Ciencia ficción, Acción</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt0437086" data-style="p5"><a href="https://www.imdb.com/title/tt0437086/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/IA2NI63uHrk" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciencia ficción" 
+                data-etiquetas="accion ciencia ficcion antman and the wasp el hombre hormiga y la avispa" 
+                data-descripcion="Después de 'Capitán América: Guerra Civil', Scott Lang lidia con las consecuencias de sus elecciones como superhéroe y padre. Mientras lucha por mantener un equilibrio entre su vida hogareña y sus responsabilidades como Ant-Man, se enfrenta a Hope van Dyne y al Dr. Hank Pym con una nueva misión urgente. Scott debe volver a ponerse el traje y aprender a luchar junto con La Avispa mientras el equipo trabaja en conjunto para descubrir secretos del pasado."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/ant-MAnAndTheWasp.jpg" alt=""></li>
+                        <li>Ant-Man and The Wasp</li>
+                        <li>2018</li>
+                        <li>Ciencia Ficción, Acción</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5095030" data-style="p5"><a href="https://www.imdb.com/title/tt5095030/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/1xdCWAagZfw" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="drama" 
+                data-etiquetas="drama biografia bohemian rhapsody queen fredy mercury" 
+                data-descripcion="'Bohemian Rhapsody' es una celebración del grupo Queen, de su música y de su singular cantante Freddie Mercury, que desafió estereotipos para convertirse en uno de los showmans más queridos del mundo. El film plasma el meteórico ascenso de la banda al olimpo de la música a través de sus icónicas canciones y su revolucionario sonido, su crisis cuando el estilo de vida de Mercury estuvo fuera de control, y su triunfal reunión en la víspera del Live Aid, en la que Mercury, mientras sufría una enfermedad que amenazaba su vida, lidera a la banda en uno de los conciertos de rock más grandes de la historia. Refleja asimismo cómo se cimentó el legado de una banda que siempre se pareció más a una familia, y que continúa inspirando soñadores y amantes de la música hasta nuestros días."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/bohemianRhapsody.jpg" alt=""></li>
+                        <li>Bohemian Rhapsody</li>
+                        <li>2018</li>
+                        <li>Drama biográfico</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt1727824" data-style="p5"><a href="https://www.imdb.com/title/tt1727824/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/HciuPmrqnJw" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciencia ficción" 
+                data-etiquetas="ciencia ficcion accion aventuras bumblebee" 
+                data-descripcion="Tratando de escapar, en el año 1987, Bumblebee encuentra refugio en un depósito de chatarra en una pequeña ciudad en la costa Californiana. Charlie (Hailee Steinfeld), a punto de cumplir 18 años y tratando de encontrar su lugar en el mundo, descubre a Bumblebee, dañado durante una batalla y descompuesto. Cuando Charlie lo revive, aprende rápidamente que éste no es un VolksWagen amarillo normal. "
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/bumblebee.jpg" alt=""></li>
+                        <li>Bumblebee</li>
+                        <li>2018</li>
+                        <li>Ciencia ficción, Acción</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt4701182" data-style="p5"><a href="https://www.imdb.com/title/tt4701182/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/lcwmDAYt22k" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="animacion disney cars 3 aventuras" 
+                data-descripcion="Sorprendido por una nueva generación de corredores ultrarrápidos, el legendario Rayo McQueen queda relegado repentinamente del deporte que tanto ama. Para retomar su carrera, va a necesitar la ayuda de una joven mecánica de carreras, Cruz Ramírez, que tiene su propio plan para ganar, además de la inspiración del fallecido Fabuloso Hudson Hornet y un par de giros inesperados. ¡Y para probar que el nº95 no está ni mucho menos acabado, el campeón tendrá que poner a prueba su valía en el gran circuito de la Copa Piston!"
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/cars3.jpg" alt=""></li>
+                        <li>Cars 3</li>
+                        <li>2017</li>
+                        <li>Animación</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt3606752" data-style="p5"><a href="https://www.imdb.com/title/tt3606752/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/E4K7JgPJ8-s" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="drama" 
+                data-etiquetas="drama green book una amistad sin fronteras" 
+                data-descripcion="Año 1962. Tony Lip (Viggo Mortensen) es un rudo italoamericano del Bronx que es contratado como chófer del virtuoso pianista negro Don Shirley (Mahershala Ali). Ambos emprenderán un viaje para una gira de conciertos por el Sur de Estados Unidos, donde Tony deberá tener presente 'El libro verde', una guía que indicaba los pocos establecimientos donde se aceptaba a los afroamericanos. Son dos personas que tendrán que hacer frente al racismo y los prejuicios, pero a las que el destino unirá, obligándoles a dejar de lado las diferencias para sobrevivir y prosperar en el viaje de sus vidas. "
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/greenBook.jpg" alt=""></li>
+                        <li>Green Book</li>
+                        <li>2018</li>
+                        <li>Drama</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt6966692" data-style="p5"><a href="https://www.imdb.com/title/tt6966692/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/QkZxoko_HC0" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="" 
+                data-etiquetas="musical fantastico el regreso de mary poppins disney" 
+                data-descripcion="Mary Poppins (Emily Blunt) es la niñera casi perfecta, con unas extraordinarias habilidades mágicas para convertir una tarea rutinaria en una aventura inolvidable y fantástica. Esta nueva secuela, vuelve para ayudar a la siguiente generación de la familia Banks a encontrar la alegría y la magia que faltan en sus vidas después de una trágica pérdida personal. La niñera viene acompañada de su amigo Jack (Lin-Manuel Miranda), un optimista farolero que ayuda a llevar la luz -y la vida- a las calles de Londres."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/elRegresoDeMaryPoppins.jpg" alt=""></li>
+                        <li class="font14">El regreso de Mary Poppins</li>
+                        <li>2018</li>
+                        <li>Musical, Fantástico</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5028340" data-style="p5"><a href="https://www.imdb.com/title/tt5028340/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/-3jsfXDZLIY" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="drama" 
+                data-etiquetas="drama entre la razon y la locura the professor and the madman" 
+                data-descripcion="A mediados del siglo XIX, el profesor James Murray comienza a compilar palabras para la primera edición del Oxford English Dictionary, un diccionario que tiene la ambiciosa tarea de recopilar todas las palabras de la lengua inglesa. Para sorpresa de Murray, un doctor de un asilo psiquiátrico será una de sus mayores ayudas..."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/entreLaRazonYLaLocura.jpg" alt=""></li>
+                        <li>Entre la razón y la locura</li>
+                        <li>2019</li>
+                        <li>Drama, Thriller</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt5932728" data-style="p5"><a href="https://www.imdb.com/title/tt5932728/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/3IrAly1lcB8" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="animacion comedia disney la vida secreta de tus mascotas the secret life of pots" 
+                data-descripcion="En un edificio de apartamentos de Manhattan, la vida de Max como mascota favorita corre peligro cuando su dueña trae a casa a un otro perro llamado Duke, con quien Max pronto tiene sus diferencias. Pero ambas mascotas tienen que dejar atrás su rivalidad cuando se enteran de que un adorable conejito blanco llamado Snowball está reclutando a un ejército de animales domésticos que han sido abandonados, decididos a vengarse de todos los animales domésticos felices y de sus dueños."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/laVidaSecretaDeTusMascotas.jpg" alt=""></li>
+                        <li class="font14">La vida secreta de tus mascotas</li>
+                        <li>2016</li>
+                        <li>Animación, Comedia</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt2709768" data-style="p5"><a href="https://www.imdb.com/title/tt2709768/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/i-80SGWfEjM" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animación" 
+                data-etiquetas="animacion disney toy story 4 aventuras fantastico pixar 3d" 
+                data-descripcion="Woody siempre ha tenido claro cuál es su labor en el mundo y su prioridad: cuidar a su dueño, ya sea Andy o Bonnie. Pero cuando Bonnie añade a Forky, un nuevo juguete de fabricación propia, a su habitación, arranca una nueva aventura que servirá para que los viejos y nuevos amigos le enseñen a Woody lo grande que puede ser el mundo para un juguete."
+            >
+                <div class="item-content"> 
+                    <ul>
+                        <li><img src="img/toyStory4.jpg" alt=""></li>
+                        <li>Toy Story 4</li>
+                        <li>2019</li>
+                        <li>Animación, Aventuras</li>
+                        <li><span class="imdbRatingPlugin" data-user="ur113405892" data-title="tt1979376" data-style="p5"><a href="https://www.imdb.com/title/tt1979376/?ref_=plg_rt_1" target="_blank">IMDb </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script></li>
+                        <li><a href="https://youtu.be/wmiIUN-7qhE" target="_blank">Ver Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+        <div class="flecha" id="flecha">
+            
+        </div>
+    </div>
+    <footer>
+        <small>Catálogo de películas de "Cabañas Bosque Dormido"</small>
+    </footer>
+
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

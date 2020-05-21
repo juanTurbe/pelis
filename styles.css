@@ -1,0 +1,463 @@
+/*generales*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(24, 23, 23);
+    font-family: 'Open sans', sans-serif;
+    color: rgb(204,204,204);
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* header */
+
+header {
+    background: #181717;
+    padding: 18px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin: 10px auto;
+}
+
+#logo a {
+    color: white;
+    font-size: 28px;
+    text-shadow: 3px 4px 2px black;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+#logo a:hover {
+    color: #ad0606;
+}
+
+
+/* recent added */
+
+#recent-added {
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(33, 34, 35, 0.86)), url(img/home1-1500x600.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recent-added h2, .catalogo {
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: lightgray;
+    font-weight: 600;
+    text-align: center;
+}
+
+.peliculas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.caja-peli {
+    margin: 16px 22px;
+    transition: .5s;
+}
+
+.caja-peli img {
+    margin-bottom: 8px;
+    transition: .5s;
+    border: solid 4px white;
+    cursor: pointer;
+}
+
+.caja-peli img:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+.caja-peli ul {
+    list-style: none;
+    text-align: center;
+}
+
+.caja-peli ul li {
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.caja-peli ul li:nth-child(2) {
+    font-size: 18px;
+}
+
+.caja-peli ul li:nth-child(3), .caja-peli ul li:nth-child(4)  {
+    font-size: 15px;
+}
+
+.caja-peli ul li:nth-child(6) {
+    padding: 7px;
+    background: hsla(0, 98%, 38%, 0.877);
+    width: 55%;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+
+.caja-peli ul li:nth-child(6):hover {
+    background: hsla(0, 100%, 49%, 0.7);
+    transition: .3s;
+    box-shadow: 4px 4px 3px #00030e;
+}
+
+
+.caja-peli ul li a {
+    color: #ccc;
+}
+
+/* catalogo */
+
+.catalogo {
+    margin: 30px 0;
+}
+
+/* categorias */
+
+.categorias {
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.categorias a {
+    color: #ccc;
+    text-align: center;
+    border-right: 1px solid #cccccc1c;
+    padding: 8px 30px;
+    margin-bottom: 16px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: #d8d8d347;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.categorias .activo {
+    font-weight: 600;
+    background:  hsla(0, 98%, 38%, 0.7);
+}
+
+/* barra de busqueda*/
+
+.form {
+    width: 30%;
+    margin: auto;
+}
+
+.barra-busqueda {
+    width: 100%;
+    border-radius: 25px;
+    border: solid 3px #d3d3d3;
+    padding: 8px;
+    margin-bottom: 20px;
+    background: #d3d3d3;
+}
+
+
+/* grid */
+
+.grid {
+    position: relative;
+    width: 100%;
+	opacity: 0;
+    transition: opacity 0.5s linear 1s;
+    padding-bottom: 60px;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 12px 16px;
+    width: calc(20% - 32px);
+    z-index: 1;
+    
+}
+
+.grid .item-content {
+    position: relative;
+}
+
+.grid .item-content li {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.grid .item-content li:nth-child(2) {
+    font-size: 17px;
+    margin-top: 6px;
+    letter-spacing: 0;
+}
+
+.grid .item-content li:nth-child(3), .grid .item-content li:nth-child(4) {
+    font-size: 14px;
+}
+
+/*imdb*/
+
+.imdbRatingStyle5 {
+    font-size: 15px !important;
+    color: #f5c518 !important;
+}
+
+.imdbRatingStyle5 span.votes {
+    font-size: 11px !important;
+    color: #ccc !important;
+}
+
+
+/*  ****    */
+
+.grid .item-content li:nth-child(6) {
+    padding: 7px;
+    background: hsla(0, 98%, 38%, 0.877);
+    width: 55%;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+
+.grid .item-content li:nth-child(6):hover {
+    background: hsla(0, 100%, 49%, 0.7);
+    transition: .3s;
+    box-shadow: 4px 4px 3px #00030e;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+    vertical-align: top;
+    border: solid 4px #fff;
+    transition: .3s;
+}
+
+.grid .item img:hover {
+    transform: scale(1.011);
+    transition: .3s;
+}
+
+
+/* overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.overlay.activo {
+    display: flex;
+}
+
+.overlay img {
+    max-width: 100%;
+    margin-bottom: 18px;
+}
+
+.overlay .descripcion {
+    display: block;
+    background: rgb(10, 10, 10);
+    padding: 18px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 25px;
+    max-width: 50%;
+    color: rgb(204,204,204);
+    line-height: 19px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+}
+
+.overlay .contenedor-img {
+    position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+    background: none;
+    font-size: 20px;
+    color: rgb(204,204,204);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+
+/* footer */
+
+footer {
+    padding: 22px;
+    background: rgb(10, 10, 10);
+    text-align: center;
+}
+
+
+/*************************** responsive ***************************/
+
+@media screen and (max-width: 1280px) {
+    .grid .item-content li:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .grid .item {
+        width: calc(25% - 32px);
+    }    
+}
+
+@media screen and (max-width: 1060px) {
+    .grid .item {
+        width: calc(33.3333% - 32px);
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .grid .item {
+        width: calc(50% - 32px);
+    }
+
+    .grid .item .item-content {
+        width: 75%;
+        margin: auto;
+    }
+
+    .form {
+        width: 92%; 
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .grid .item .item-content {
+        width: 100%;
+    }
+
+    .categorias a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid .item {
+        width: calc(50% - 32px);
+    }
+
+    .overlay .descripcion {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .imdbRatingStyle5 .votes {
+        display: none;
+    }
+
+    .grid .item .item-content li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid .item {
+        width: calc(50% - 32px);
+    }
+
+    .grid .item .item-content li:nth-child(4) {
+        display: none;
+    }
+
+    .grid .item-content li:nth-child(6) {
+        width: 80%;
+    }
+
+    #recent-added h2, .catalogo {
+        font-size: 26px;
+    }
+
+    
+    .overlay .descripcion {
+        font-size: 14px;
+        max-width: 96%;
+        line-height: 1.1;
+    }
+
+    .overlay .contenedor-img {
+        width: 38%;
+    }
+
+    .overlay img {
+        margin-bottom: -15px;
+    }
+
+    .imdbRatingStyle5 .votes {
+        display: none;
+    }
+
+    .categorias a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+
+}
+
